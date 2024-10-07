@@ -50,11 +50,14 @@ h1, h2 {
 .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto
 }
 
 .column {
   flex: 1;
   padding: 20px;
+  margin: 10px;
 }
 
 h1 {
@@ -146,7 +149,14 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+.container{
+  flex-direction: column;
+  
+  .column {
+    padding: 10px;
+    margin: 0;
+  
   nav ul li {
     display: block;
     margin-bottom: 10px;
